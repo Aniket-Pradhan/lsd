@@ -16,3 +16,10 @@ lsd is also available on the AUR, here. You can get the (also) PKGBUILD from the
 2. -w | --width : It specifies the width of the *trips*.  Pick a suitable number for yourself, depending upon your screen size and resolution. Default is 100 units.
 
 3. -o | --widthOffset : It specifies the offset of the *trips* (from where the trips start from).  Pick a suitable number for yourself, depending upon your screen size and resolution. Default is 0 units.
+
+### How to build from PKGBUILD
+If you have `makepkg` installed (it is a part of the `base-devel` group for Arch), then you can simply move into this directory, and run
+
+`makepkg -c`
+
+-c : Cleans the redundant binary and source files used to create the package.
