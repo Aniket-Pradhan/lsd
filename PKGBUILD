@@ -8,3 +8,4 @@ source=(lsd)
 package() {
   install -D -t "$pkgdir/usr/bin" "$srcdir/lsd"
 }
+md5sums=('42d9282d48d05a2a8ddf90487737d91c')
