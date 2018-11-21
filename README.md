@@ -17,6 +17,8 @@ lsd is also available on the AUR, [here](https://aur.archlinux.org/packages/lsd/
 
 3. -o | --widthOffset : It specifies the offset of the *trips* (from where the trips start from).  Pick a suitable number for yourself, depending upon your screen size and resolution. Default is 0 units.
 
+4. -c | --cringe : Produces a more psychedelic effect.
+
 ### How to build from PKGBUILD
 If you have `makepkg` installed (it is a part of the `base-devel` group for Arch), then you can simply move into this directory, and run
 
