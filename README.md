@@ -1,6 +1,8 @@
 # lsd
 ## A Cheap Psychedelic Simulator on Linux
 
+### Screen Shot
+![](lmao.gif)
 
 ### How To
 1. Simply clone the repository, and run the shell script (on Bash (currently))
