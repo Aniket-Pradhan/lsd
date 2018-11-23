@@ -1,5 +1,5 @@
 # lsd
-## A Cheap Psychedelic Simulator on Linux
+## A Cheap Psychedelic Simulator on Linux  @_@
 
 
 ### How To
