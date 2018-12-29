@@ -5,10 +5,10 @@
 # Setting rows and width equal to the terminal size.
 
 # Decrementing $rows, as more number of rows cause the screen to scroll. Which we don't want.
-rows=`tput lines`;
-rows=`expr $rows - 1`;
+rows=$(tput lines);
+rows=${$rows - 1};
 
-width=`tput cols`;
+width=$(tput cols);
 
 widthOffset=0;
 cringe=false;
@@ -47,7 +47,7 @@ while test $# -gt 0; do
 			exit 1;
 			;;
 	esac
-  done  
+done  
 
 # An infinite loop.
 for((j=1; j<3;)); do
@@ -70,9 +70,9 @@ for((j=1; j<3;)); do
 			fi
 			
 			# Do the magic
-			printf "\e[48;5;${i}m " $i;
+			printf "\e[48;5;%sm " "$i";
 			printf '\e[0m';
-			[ ! $((($i - 15) % 6)) -eq 0 ] && printf '';
+			[ ! $(((${i} - 15) % 6)) -eq 0 ] && printf '';
 		done
 
 		printf '\n';
