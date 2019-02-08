@@ -1,14 +1,15 @@
-# Maintainer: Aniket-Pradhan aniket17133@iiitd.ac.in
+# Maintainer: Aniket-Pradhan aniket17133 [at] iiitd [dot] ac [dot] in
+# Creator: Aniket-Pradhan
 
-pkgname=lsd
-pkgver=1.3
+pkgname=lsd-sim
+pkgver=1.0.0
 pkgrel=1
 pkgdesc="A Cheap Psychedelic Simulator on Linux"
 arch=('i686' 'x86_64')
-url="https://github.com/Aniket-Pradhan/lsd"
-source=(lsd)
+source=(lsd::git+https://github.com/Aniket-Pradhan/lsd#tag=1.0.0)
 
 package() {
-  install -D -t "$pkgdir/usr/bin" "$srcdir/lsd"
+  install -D -t "$pkgdir/usr/bin" "$srcdir/lsd/lsd"
 }
-md5sums=('843fa6fd1f4c8e6921a79ab4c2947714')
+
+md5sums=(SKIP)
