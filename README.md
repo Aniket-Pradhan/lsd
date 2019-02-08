@@ -9,7 +9,7 @@
 2. If you want to run this from anywhere, make a binary of this script (using `shc`), add the path to your PATH variable, et voila!
 
 ### Arch User Repository
-lsd is also available on the AUR, [here](https://aur.archlinux.org/packages/lsd/). You can (also) get the PKGBUILD from there, and install it using your favorite AUR helper.
+lsd is also available on the AUR, [here](https://aur.archlinux.org/packages/lsd-sim/). You can (also) get the PKGBUILD from there, and install it using your favorite AUR helper.
 
 ### Parameters
 
