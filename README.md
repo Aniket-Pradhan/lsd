@@ -2,7 +2,7 @@
 ## A Cheap Psychedelic Simulator on Linux  @_@
 
 ### Screen Shot
-![](lmao.gif)
+![](sample.gif)
 
 ### How To
 1. Simply clone the repository, and run the shell script (on Bash (currently))
