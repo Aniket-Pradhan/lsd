@@ -1,6 +1,10 @@
 # lsd
 ## A Cheap Psychedelic Simulator on Linux  @_@
 
+---
+### EPILEPSY WARNING: It showcases flashing lights, and hence can cause epilepsy.
+---
+
 ### Screen Shot
 ![](sample.gif)
 
@@ -9,7 +13,7 @@
 2. If you want to run this from anywhere, make a binary of this script (using `shc`), add the path to your PATH variable, et voila!
 
 ### Arch User Repository
-lsd is also available on the AUR, [here](https://aur.archlinux.org/packages/lsd-sim/). You can (also) get the PKGBUILD from there, and install it using your favorite AUR helper.
+lsd is also available on the AUR, [here](https://aur.archlinux.org/packages/lsd-sim/). You can (also) get the PKGBUILD from here.
 
 ### Parameters
 
@@ -27,3 +31,7 @@ If you have `makepkg` installed (it is a part of the `base-devel` group for Arch
 `makepkg -c`
 
 -c : Cleans the redundant binary and source files used to create the package.
+
+After your package is ready, you can install the package using pacman.
+
+`pacman -U lsd-...`
