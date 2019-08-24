@@ -1,12 +1,10 @@
 #!/bin/bash
 
 # Global Variables
-
 # Setting rows and width equal to the terminal size.
-
 # Decrementing $rows, as more number of rows cause the screen to scroll. Which we don't want.
 rows=$(tput lines);
-rows=${$rows - 1};
+rows=$rows-2;
 
 width=$(tput cols);
 
@@ -19,6 +17,12 @@ printf "\033c"
 # Take the user parameters. 
 while test $# -gt 0; do
 	case "$1" in
+		-d | --dry-run)
+			echo $rows;
+			exit;
+			shift;
+			;;
+
 		-r | --rows)
 			shift
 			rows=$1
@@ -48,6 +52,9 @@ while test $# -gt 0; do
 			;;
 	esac
 done  
+
+# Clear screen first
+printf "\033c";
 
 # An infinite loop.
 for((j=1; j<3;)); do
